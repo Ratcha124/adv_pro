@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6612732124</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(30, 255, 0);">
+    <div class="cet"><h2>News</h2></div>
+    <div class="sectiom">
+        <div class="box1">
+                <h2 id="demo"></h2><p id="dei"></p>
+            </div>
+            <div class="box1">
+                <h2 id="demo1"></h2><p id="dei1"></p>
+            </div>
+            <div class="box1">
+                <h2 id="demo2"></h2><p id="dei2"></p>
+            </div>
+            <div class="box1">
+                <h2 id="demo3"></h2><p id="dei3"></p>
+            </div>
+    </div>
+</body>
+<script>
+set();
+function set(){
+    fetch('https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=0637305af1144aced343d2c9d8262628')
+    .then(response => response.json())
+    //.then(data => console.log(data))
+    .then(data => showData(data));
+}
+function showData(data){
+    document.getElementById("demo").innerHTML =`${data.articles[0].title}`;
+    document.getElementById("demo1").innerHTML =`${data.articles[1].title}`; 
+    document.getElementById("demo2").innerHTML =`${data.articles[2].title}`;
+    document.getElementById("demo3").innerHTML =`${data.articles[3].title}`;
+    document.getElementById("dei").innerHTML =`${data.articles[0].description}`;
+    document.getElementById("dei1").innerHTML =`${data.articles[1].description}`; 
+    document.getElementById("dei2").innerHTML =`${data.articles[2].description}`;
+    document.getElementById("dei3").innerHTML =`${data.articles[3].description}`;
+    
+}
+</script>
+</html>
