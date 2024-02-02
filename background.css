@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;0,900;1,400;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(5, 5, 5); 
+}
+.cet{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.cet h2{
+    margin-top: 50px;
+    font-size: 36pt;
+    font-weight: 800;
+    text-align: center;
+}
+.sectiom{
+    display: flex;
+    justify-content: center;
+}
+
+.sectiom h2{
+    padding-top: 90px;
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+}
+
+.sectiom p{
+    font-size: 10pt;
+    font-weight: 400;
+    text-align: center;
+}
+
+.box1{
+    position: relative;
+    margin-right: 50px;
+    width: 350px;
+    height: 400px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+.box1 p{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 30px;
+    font-size: 12pt;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.466);
+    padding: 5px 15px;
+    color: #000;
+    bottom: 8px;
+    right: 16px;
+}
+
+.box1 h2{
+    position: absolute;
+    padding-top: 0px;
+    top: 80px;
+    margin-top: 5px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 700;
+    background: rgba(247, 251, 255, 0.315);
+    color: #000;
+    transition: 0.5s;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+}
+.box1 a{
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 700;
+    background: rgba(247, 251, 255, 0.315);
+    padding: 5px 15px;
+    color: #000;
+    transition: 0.5s;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.box1 a:hover{
+    border: 2px solid #020202;
+    background: transparent;
+    color: #131212;
+}
+.box1 img{
+    position: relative;
+    width:100%;
+    height:100%;
+    border-radius: 50px;
+};
